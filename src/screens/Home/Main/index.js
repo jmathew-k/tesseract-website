@@ -5,8 +5,8 @@ import styles from "./Main.module.sass";
 import ScrollButton from "../../../components/ScrollButton";
 import Cards from "./Cards";
 
-const Main = ({ scrollToRef }) => {
-  return (
+const Hero = ({ scrollToRef }) => {
+	return (
 		<div className={cn('section', styles.main)}>
 			<div className={cn('container', styles.container)}>
 				<div className={styles.wrap}>
@@ -14,8 +14,8 @@ const Main = ({ scrollToRef }) => {
 						Decentralised Commerce Layer for<br></br>Digital Experiences
 					</h2>
 					<div className={styles.text}>
-						Bring True Ownership Of Digital Assets, Verifiable Scarcity, And Open
-						Standard For Interoperability To Your Game Economy
+						Bring True Ownership Of Digital Assets, Verifiable Scarcity, And
+						Open Standard For Interoperability To Your Game Economy
 					</div>
 					<Link className={cn('button', styles.button)} to='/learn-crypto'>
 						Early Access
@@ -29,8 +29,8 @@ const Main = ({ scrollToRef }) => {
 				</div>
 				<div className={styles.bg}>
 					<img
-						srcSet='/images/content/Controller2.png 2x'
-						src='/images/content/Controller2.png'
+						srcSet='/images/content/controller2.png 2x'
+						src='/images/content/controller2.png'
 						alt='Cards'
 					/>
 				</div>
@@ -38,6 +38,6 @@ const Main = ({ scrollToRef }) => {
 			</div>
 		</div>
 	)
-};
+}
 
-export default Main;
+export default Hero
