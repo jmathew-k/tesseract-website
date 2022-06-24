@@ -1,0 +1,105 @@
+.title {
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 1.33333;
+  font-weight: 600;
+  letter-spacing: -.01em;
+}
+
+.text,
+.info {
+  margin-bottom: 12px;
+}
+
+.text {
+  color: #777E90;
+}
+
+.info {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.list {
+  margin-bottom: 32px;
+}
+
+.line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.line:not(:last-child) {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #E6E8EC;
+}
+
+:global(.dark-mode) .line:not(:last-child) {
+  border-color: #353945;
+}
+
+.subtitle {
+  margin-right: auto;
+  padding-right: 20px;
+  color: #777E90;
+}
+
+.details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content {
+  margin-right: 12px;
+  font-weight: 500;
+}
+
+.copy svg {
+  fill: #777E90;
+  -webkit-transition: fill .2s;
+  transition: fill .2s;
+}
+
+.copy:hover svg {
+  fill: #23262F;
+}
+
+:global(.dark-mode) .copy:hover svg {
+  fill: #FCFCFD;
+}
+
+.code {
+  padding: 12px;
+  background: #E6E8EC;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+:global(.dark-mode) .code {
+  background: #353945;
+}
+
+.btns {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.btns .button {
+  min-width: 184px;
+}
+/*# sourceMappingURL=PaymentDetails.module.css.map */

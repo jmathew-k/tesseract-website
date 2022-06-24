@@ -1,0 +1,32 @@
+.head {
+  padding: 20px 32px 8px;
+  font-size: 12px;
+  line-height: 1.66667;
+  font-weight: 500;
+  color: #777E90;
+}
+
+@media only screen and (max-width: 767px) {
+  .head {
+    padding: 20px 0 8px;
+  }
+}
+
+.body {
+  background: #FCFCFD;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+:global(.dark-mode) .body {
+  background: #17181B;
+}
+
+.button {
+  height: 32px;
+}
+
+.button:not(:last-child) {
+  margin-right: 8px;
+}
+/*# sourceMappingURL=WalletMargin.module.css.map */

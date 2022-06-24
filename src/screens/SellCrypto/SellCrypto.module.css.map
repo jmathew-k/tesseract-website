@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "SellCrypto.module.sass",
+        "../../styles/helpers.sass"
+    ],
+    "names": [],
+    "file": "SellCrypto.module.css"
+}

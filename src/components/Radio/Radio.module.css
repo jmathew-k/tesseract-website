@@ -1,0 +1,87 @@
+.radio {
+  display: inline-block;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.input:checked + .inner .tick:before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inner:hover .tick {
+  border-color: #3772FF;
+}
+
+.tick {
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  border-radius: 50%;
+  border: 2px solid #E6E8EC;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+:global(.dark-mode) .tick {
+  background: #141416;
+  border-color: #353945;
+}
+
+.tick:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #3772FF;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.text {
+  line-height: 1.71429;
+  font-weight: 500;
+  color: #23262F;
+}
+
+:global(.dark-mode) .text {
+  color: #FCFCFD;
+}
+
+.text span {
+  font-weight: 400;
+}
+
+.text strong {
+  display: block;
+  font-weight: 600;
+}
+/*# sourceMappingURL=Radio.module.css.map */

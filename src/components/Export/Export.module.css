@@ -1,0 +1,51 @@
+.export {
+  position: relative;
+}
+
+.body {
+  position: absolute;
+  top: calc(100% + 16px);
+  right: 0;
+  z-index: 2;
+  width: 364px;
+  padding: 32px;
+  background: #FCFCFD;
+  border: 1px solid #E6E8EC;
+  -webkit-box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12);
+          box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12);
+  border-radius: 16px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+@media only screen and (max-width: 767px) {
+  .body {
+    width: 311px;
+    padding: 16px 0 24px;
+  }
+}
+
+:global(.dark-mode) .body {
+  background: #23262F;
+  border-color: #353945;
+}
+
+.body.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.body .button {
+  margin-top: 24px;
+}
+
+.interval {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+/*# sourceMappingURL=Export.module.css.map */

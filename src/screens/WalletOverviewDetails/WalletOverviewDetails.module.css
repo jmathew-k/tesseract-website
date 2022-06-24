@@ -1,0 +1,131 @@
+.top {
+  padding: 32px;
+  background: #FCFCFD;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 767px) {
+  .top {
+    padding: 32px 24px;
+  }
+}
+
+:global(.dark-mode) .top {
+  background: #17181B;
+}
+
+.line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+}
+
+.title span {
+  margin-left: 12px;
+  color: #B1B5C3;
+}
+
+.back {
+  position: relative;
+  top: -2px;
+  margin-right: 12px;
+}
+
+.back svg {
+  fill: #777E90;
+  -webkit-transition: fill .2s;
+  transition: fill .2s;
+}
+
+.back:hover svg {
+  fill: #23262F;
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 767px) {
+  .btns {
+    display: none;
+  }
+}
+
+.btns .button:not(:last-child) {
+  margin-right: 12px;
+}
+
+.info {
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.number {
+  font-size: 24px;
+  line-height: 1.33333;
+  font-weight: 600;
+  letter-spacing: -.01em;
+}
+
+.category {
+  margin-left: 8px;
+}
+
+.price {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #777E90;
+}
+
+.head {
+  padding: 20px 32px 8px;
+  font-size: 12px;
+  line-height: 1.66667;
+  font-weight: 500;
+  color: #777E90;
+}
+
+@media only screen and (max-width: 767px) {
+  .head {
+    padding: 20px 0 8px;
+  }
+}
+
+.body {
+  background: #FCFCFD;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+:global(.dark-mode) .body {
+  background: #17181B;
+}
+/*# sourceMappingURL=WalletOverviewDetails.module.css.map */

@@ -1,0 +1,254 @@
+.balance {
+  border-radius: 4px;
+  background: #FCFCFD;
+}
+
+:global(.dark-mode) .balance {
+  background: #17181B;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 16px 12px;
+}
+
+.sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+}
+
+.direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.direction span {
+  width: 12px;
+  height: 2px;
+  border-radius: 1;
+}
+
+.direction span:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.direction:hover, .direction.active {
+  background: #F1F2F4;
+}
+
+:global(.dark-mode) .direction:hover, :global(.dark-mode) .direction.active {
+  background: #23262F;
+}
+
+.direction:not(:last-child) {
+  margin-right: 12px;
+}
+
+.dropdownHead {
+  height: 32px;
+  padding: 0 36px 0 8px;
+  background: #F1F2F4;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 12px;
+  line-height: 32px;
+}
+
+.dropdownArrow {
+  right: 0;
+}
+
+.dropdownArrow svg {
+  fill: #777E90;
+}
+
+.dropdownBody {
+  border-radius: 4px;
+}
+
+.dropdownOption {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4px;
+  padding: 4px 16px;
+  font-size: 12px;
+  line-height: 1.66667;
+  font-weight: 600;
+  color: #777E90;
+}
+
+.item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 16px;
+  font-size: 12px;
+  line-height: 1.66667;
+  font-weight: 500;
+}
+
+.item.negative .line {
+  background: rgba(255, 104, 56, 0.15);
+}
+
+.item.negative .price {
+  color: #FF6838;
+}
+
+.item.positive .line {
+  background: rgba(88, 189, 125, 0.15);
+}
+
+.item.positive .price {
+  color: #58BD7D;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+@media only screen and (max-width: 1179px) {
+  .item:nth-child(n+10) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .item:nth-child(n+10) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.price {
+  font-weight: 600;
+}
+
+.price,
+.amount {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 70px;
+}
+
+.amount {
+  text-align: right;
+}
+
+.total {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12px;
+  padding: 12px 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1179px) {
+  .statistics {
+    margin-top: 4px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .statistics {
+    margin-top: 12px;
+  }
+}
+
+.statistics svg {
+  margin-left: 8px;
+}
+
+.statistics:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+@media only screen and (max-width: 1179px) {
+  .statistics:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .statistics:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.statistics.positive .currency {
+  color: #58BD7D;
+}
+
+.statistics.positive svg {
+  fill: #58BD7D;
+}
+
+.statistics.negative .currency {
+  color: #FF6838;
+}
+
+.statistics.negative svg {
+  fill: #FF6838;
+}
+
+.money {
+  margin-left: 8px;
+}
+/*# sourceMappingURL=Balance.module.css.map */

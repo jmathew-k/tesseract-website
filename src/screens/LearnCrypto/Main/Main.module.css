@@ -1,0 +1,76 @@
+.main {
+  padding-top: 80px;
+}
+
+@media only screen and (max-width: 767px) {
+  .main {
+    padding-top: 64px;
+  }
+}
+
+.head {
+  max-width: 730px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.info {
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: -.01em;
+  color: #777E90;
+}
+
+@media only screen and (max-width: 767px) {
+  .info {
+    font-size: 16px;
+  }
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button:not(:last-child) {
+  margin-right: 16px;
+}
+
+.video {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .video:before {
+    content: "";
+    display: block;
+    padding-bottom: 122%;
+  }
+}
+
+.video img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .video img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+/*# sourceMappingURL=Main.module.css.map */

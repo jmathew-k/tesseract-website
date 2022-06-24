@@ -1,0 +1,80 @@
+.preview {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .preview {
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .preview img {
+    max-width: 300px;
+  }
+}
+
+.text {
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 500;
+  color: #777E90;
+}
+
+.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 48px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.email svg {
+  margin-right: 12px;
+  fill: #23262F;
+}
+
+:global(.dark-mode) .email svg {
+  fill: #FCFCFD;
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .btns {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .button {
+    width: 100%;
+  }
+}
+
+.button:not(:last-child) {
+  margin-right: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+  .button:not(:last-child) {
+    margin: 0 0 12px;
+  }
+}
+/*# sourceMappingURL=ApiKeysConfirm.module.css.map */

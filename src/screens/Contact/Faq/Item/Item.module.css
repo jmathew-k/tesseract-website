@@ -1,0 +1,92 @@
+.item:hover .head {
+  color: #3772FF;
+}
+
+.item:hover .number {
+  color: #3772FF;
+}
+
+.item:not(:last-child) .head {
+  border-bottom: 1px solid #E6E8EC;
+}
+
+:global(.dark-mode) .item:not(:last-child) .head {
+  border-color: #353945;
+}
+
+.head {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.head.active .number {
+  color: #3772FF;
+}
+
+.head.active .arrow svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.number {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 40px;
+  color: #777E90;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 24px;
+  margin-left: 16px;
+}
+
+.arrow svg {
+  fill: #777E90;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.body {
+  display: none;
+  padding: 24px 0 0 40px;
+  color: #777E90;
+}
+
+.body.visible {
+  display: block;
+}
+/*# sourceMappingURL=Item.module.css.map */

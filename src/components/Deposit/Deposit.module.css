@@ -1,0 +1,240 @@
+.head {
+  padding-top: 72px;
+}
+
+.head .icon {
+  background: #9757D7;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 32px;
+  border-radius: 50%;
+}
+
+.icon svg {
+  fill: #FCFCFD;
+}
+
+.info {
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.btns .button {
+  width: 100%;
+}
+
+.btns .button:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.title {
+  margin-bottom: 8px;
+  padding-right: 56px;
+}
+
+@media only screen and (max-width: 767px) {
+  .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+}
+
+.back {
+  position: relative;
+  top: -7px;
+  margin-right: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+  .back {
+    top: -5px;
+  }
+}
+
+.back svg {
+  -webkit-transition: fill .2s;
+  transition: fill .2s;
+}
+
+:global(.dark-mode) .back svg {
+  fill: #FCFCFD;
+}
+
+.back:hover svg {
+  fill: #3772FF;
+}
+
+.subtitle {
+  margin-bottom: 32px;
+  padding-left: 48px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #777E90;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+  padding: 20px 32px;
+  border-radius: 4px;
+  background: #F4F5F6;
+}
+
+@media only screen and (max-width: 767px) {
+  .wrap {
+    padding: 20px;
+  }
+}
+
+:global(.dark-mode) .wrap {
+  background: #353945;
+}
+
+.category {
+  position: relative;
+  margin-right: auto;
+  padding-left: 20px;
+  font-weight: 500;
+  color: #353945;
+}
+
+:global(.dark-mode) .category {
+  color: #E6E8EC;
+}
+
+.category:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  background: #58BD7D;
+}
+
+.details {
+  text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+  .details {
+    padding-top: 2px;
+  }
+}
+
+.currency {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+  .currency {
+    font-size: 14px;
+  }
+}
+
+.price {
+  color: #777E90;
+}
+
+.stage {
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.content {
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.66667;
+  color: #777E90;
+}
+
+.code {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 310px;
+  height: 40px;
+  margin: 0 auto 32px;
+  background: #F4F5F6;
+  border: 1px solid #E6E8EC;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+:global(.dark-mode) .code {
+  background: #353945;
+  border-color: #353945;
+}
+
+.copy {
+  margin-left: 12px;
+}
+
+.copy svg {
+  fill: #777E90;
+  -webkit-transition: fill .2s;
+  transition: fill .2s;
+}
+
+.copy:hover svg {
+  fill: #23262F;
+}
+
+:global(.dark-mode) .copy:hover svg {
+  fill: #FCFCFD;
+}
+
+.preview {
+  width: 160px;
+  margin: 0 auto 32px;
+  padding: 14px;
+  border: 2px dashed #3772FF;
+  border-radius: 12px;
+}
+
+.preview img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.note {
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #777E90;
+}
+/*# sourceMappingURL=Deposit.module.css.map */

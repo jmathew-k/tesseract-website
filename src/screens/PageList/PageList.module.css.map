@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,KAAK;CAEQ;;ACSpB,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EDZ5C,AAAA,KAAK,CAAC;IAGF,OAAO,EAAE,MAAM;GAAK",
+    "sources": [
+        "PageList.module.sass",
+        "../../styles/helpers.sass"
+    ],
+    "names": [],
+    "file": "PageList.module.css"
+}

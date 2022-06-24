@@ -1,0 +1,180 @@
+.stage {
+  font-size: 12px;
+  line-height: 1.66667;
+  color: #353945;
+}
+
+:global(.dark-mode) .stage {
+  color: #E6E8EC;
+}
+
+.title {
+  margin-bottom: 12px;
+}
+
+.title span {
+  color: #58BD7D;
+}
+
+.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.email svg {
+  margin-right: 12px;
+  fill: #23262F;
+}
+
+:global(.dark-mode) .email svg {
+  fill: #FCFCFD;
+}
+
+.item {
+  margin-top: 48px;
+  padding-top: 48px;
+  border-top: 1px solid #E6E8EC;
+}
+
+@media only screen and (max-width: 767px) {
+  .item {
+    margin-top: 24px;
+    padding-top: 24px;
+  }
+}
+
+:global(.dark-mode) .item {
+  border-color: #353945;
+}
+
+@media only screen and (max-width: 767px) {
+  .item:last-child .button {
+    width: 100%;
+  }
+}
+
+.subtitle {
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 1.33333;
+  font-weight: 600;
+  letter-spacing: -.01em;
+}
+
+.info {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #353945;
+}
+
+:global(.dark-mode) .info {
+  color: #E6E8EC;
+}
+
+.group {
+  margin-bottom: 24px;
+}
+
+.box {
+  position: relative;
+}
+
+.box .field {
+  position: relative;
+  padding-right: 36px;
+}
+
+.box .label {
+  color: #23262F;
+}
+
+:global(.dark-mode) .box .label {
+  color: #777E90;
+}
+
+.box .input {
+  padding-right: 82px;
+  border-color: #F4F5F6;
+  background: #F4F5F6;
+}
+
+:global(.dark-mode) .box .input {
+  background: #23262F;
+  border-color: #23262F;
+}
+
+.box .input:focus {
+  border-color: #58BD7D;
+  background: transparent;
+}
+
+.box:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.remove {
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+}
+
+.remove svg {
+  fill: #777E90;
+  -webkit-transition: fill .2s;
+  transition: fill .2s;
+}
+
+.remove:hover svg {
+  fill: #23262F;
+}
+
+.category {
+  position: absolute;
+  right: 48px;
+  bottom: 11px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .row {
+    display: block;
+    margin: 0;
+  }
+}
+
+.row .field {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 16px);
+          flex: 0 0 calc(50% - 16px);
+  width: calc(50% - 16px);
+  margin: 0 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .row .field {
+    width: 100%;
+    margin: 0;
+  }
+  .row .field:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.row:not(:last-child) {
+  margin-bottom: 16px;
+}
+/*# sourceMappingURL=ApiKeysEnabled.module.css.map */

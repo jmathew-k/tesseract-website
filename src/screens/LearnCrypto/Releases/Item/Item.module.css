@@ -1,0 +1,152 @@
+.item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  color: #23262F;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+@media only screen and (max-width: 1023px) {
+  .item {
+    display: block;
+  }
+}
+
+:global(.dark-mode) .item {
+  color: #FCFCFD;
+}
+
+.item:hover {
+  color: #3772FF;
+}
+
+.item:hover .arrow {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.item:hover .arrow svg {
+  fill: #3772FF;
+}
+
+.preview {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 640px;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 1179px) {
+  .preview {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .preview {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+.preview img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .preview img {
+    min-height: 240px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 352px;
+}
+
+@media only screen and (max-width: 1179px) {
+  .details {
+    width: auto;
+    padding-right: 32px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .details {
+    padding-right: 0;
+  }
+}
+
+.category {
+  margin-bottom: auto;
+}
+
+.title {
+  margin: 24px 0 8px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .title {
+    margin-top: 16px;
+  }
+}
+
+.currency {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #353945;
+}
+
+:global(.dark-mode) .currency {
+  color: #B1B5C3;
+}
+
+.content {
+  margin-bottom: auto;
+  color: #777E90;
+}
+
+.arrow {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 0;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+@media only screen and (max-width: 1023px) {
+  .arrow {
+    position: static;
+    margin-top: 16px;
+  }
+}
+
+.arrow svg {
+  fill: #777E90;
+  -webkit-transition: fill .2s;
+  transition: fill .2s;
+}
+/*# sourceMappingURL=Item.module.css.map */

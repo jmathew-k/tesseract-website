@@ -1,0 +1,78 @@
+.container {
+  max-width: 1440px;
+  padding: 0;
+}
+
+.info {
+  max-width: 350px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-weight: 500;
+  color: #777E90;
+}
+
+.item {
+  color: #23262F;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+:global(.dark-mode) .item {
+  color: #FCFCFD;
+}
+
+.item:hover {
+  color: #3772FF;
+}
+
+.item:hover .preview img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.preview {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 296px;
+  overflow: hidden;
+}
+
+.preview img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.category {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+}
+
+.body {
+  padding: 40px 40px 0;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.content {
+  color: #777E90;
+}
+/*# sourceMappingURL=Education.module.css.map */

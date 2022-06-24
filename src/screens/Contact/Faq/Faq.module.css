@@ -1,0 +1,79 @@
+.title {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .title {
+    margin-bottom: 40px;
+  }
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -12px -6px 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
+
+.btn {
+  margin: 12px 6px 0;
+  padding: 6px 12px;
+  border-radius: 14px;
+  background: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-weight: 700;
+  color: #777E90;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.btn:hover {
+  color: #353945;
+}
+
+:global(.dark-mode) .btn:hover {
+  color: #FCFCFD;
+}
+
+.btn.active {
+  background: #353945;
+  color: #FCFCFD;
+}
+
+:global(.dark-mode) .btn.active {
+  background: #353945;
+  color: #FCFCFD;
+}
+
+.dropdown {
+  display: none;
+  text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+  .dropdown {
+    display: block;
+    margin-bottom: 24px;
+  }
+}
+
+.list {
+  max-width: 546px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=Faq.module.css.map */

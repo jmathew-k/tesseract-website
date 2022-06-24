@@ -1,0 +1,108 @@
+.scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: none;
+  overflow: hidden;
+  border: 2px solid #E6E8EC;
+  -webkit-transition: border-color .2s;
+  transition: border-color .2s;
+}
+
+.scroll svg {
+  fill: #B1B5C3;
+  -webkit-transition: fill .2s;
+  transition: fill .2s;
+}
+
+.scroll:hover {
+  border-color: #23262F;
+}
+
+.scroll:hover svg {
+  fill: #23262F;
+}
+
+:global(.dark-mode) .scroll {
+  border-color: #353945;
+}
+
+:global(.dark-mode) .scroll:hover {
+  border-color: #FCFCFD;
+}
+
+:global(.dark-mode) .scroll:hover svg {
+  fill: #FCFCFD;
+}
+
+.line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translateY(-23px);
+          transform: translateY(-23px);
+  -webkit-animation: arrowsDown ease-out 1.4s infinite;
+          animation: arrowsDown ease-out 1.4s infinite;
+}
+
+.line svg:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+@-webkit-keyframes arrowsDown {
+  80% {
+    -webkit-transform: translateY(23px);
+            transform: translateY(23px);
+  }
+  100% {
+    -webkit-transform: translateY(23px);
+            transform: translateY(23px);
+  }
+}
+
+@keyframes arrowsDown {
+  80% {
+    -webkit-transform: translateY(23px);
+            transform: translateY(23px);
+  }
+  100% {
+    -webkit-transform: translateY(23px);
+            transform: translateY(23px);
+  }
+}
+
+@-webkit-keyframes arrowsDownSmall {
+  80% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+  }
+  100% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+  }
+}
+
+@keyframes arrowsDownSmall {
+  80% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+  }
+  100% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+  }
+}
+/*# sourceMappingURL=ScrollButton.module.css.map */

@@ -1,0 +1,259 @@
+.activity {
+  padding: 32px 0;
+  background: #F4F5F6;
+}
+
+@media only screen and (max-width: 767px) {
+  .activity {
+    background: none;
+  }
+}
+
+:global(.dark-mode) .activity {
+  background: none;
+}
+
+@media only screen and (max-width: 1179px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+.body {
+  padding: 40px;
+  border-radius: 8px;
+  background: #FCFCFD;
+}
+
+@media only screen and (max-width: 1179px) {
+  .body {
+    padding: 24px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .body {
+    padding: 0;
+    background: none;
+  }
+}
+
+:global(.dark-mode) .body {
+  background: #18191D;
+}
+
+@media only screen and (max-width: 1023px) {
+  :global(.dark-mode) .body {
+    background: none;
+  }
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #E6E8EC;
+}
+
+@media only screen and (max-width: 767px) {
+  .top {
+    display: block;
+    padding: 0;
+    border: none;
+  }
+}
+
+:global(.dark-mode) .top {
+  border-color: #353945;
+}
+
+.dropdown {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .dropdown {
+    display: block;
+    width: 256px;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .dropdown {
+    width: 100%;
+    margin: 0 0 16px;
+  }
+}
+
+.dropdownHead {
+  background: none;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 1023px) {
+  .nav {
+    display: none;
+  }
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px 12px;
+  border-radius: 14px;
+  background: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-weight: 700;
+  color: #777E90;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.link:hover {
+  color: #353945;
+}
+
+:global(.dark-mode) .link:hover {
+  color: #FCFCFD;
+}
+
+.link.active {
+  background: #353945;
+  color: #FCFCFD;
+}
+
+:global(.dark-mode) .link.active {
+  background: #353945;
+  color: #FCFCFD;
+}
+
+.link:not(:last-child) {
+  margin-right: 16px;
+}
+
+@media only screen and (max-width: 1179px) {
+  .link:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.form {
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 276px;
+  margin-right: 16px;
+}
+
+@media only screen and (max-width: 1179px) {
+  .form {
+    width: 230px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .form {
+    width: 100%;
+    margin: 0 0 16px;
+  }
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 0 40px 0 14px;
+  border-radius: 8px;
+  background: none;
+  border: 2px solid #E6E8EC;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  line-height: 1.66667;
+  color: #23262F;
+  -webkit-transition: border-color .2s;
+  transition: border-color .2s;
+}
+
+@media only screen and (max-width: 1023px) {
+  .input {
+    height: 48px;
+  }
+}
+
+:global(.dark-mode) .input {
+  border-color: #353945;
+  color: #FCFCFD;
+}
+
+.input::-webkit-input-placeholder {
+  color: #777E90;
+}
+
+.input:-ms-input-placeholder {
+  color: #777E90;
+}
+
+.input::-ms-input-placeholder {
+  color: #777E90;
+}
+
+.input::placeholder {
+  color: #777E90;
+}
+
+.input:focus {
+  border-color: #777E90;
+}
+
+.result {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+}
+
+.result svg {
+  fill: #777E90;
+  -webkit-transition: fill .2s;
+  transition: fill .2s;
+}
+
+.result:hover svg {
+  fill: #3772FF;
+}
+
+.line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 42px;
+}
+
+.title {
+  margin-right: auto;
+}
+/*# sourceMappingURL=Activity.module.css.map */

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,QAAQ,CAAC;EACL,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,MAAM;CAAG",
+    "sources": [
+        "Details.module.sass",
+        "../../../styles/helpers.sass"
+    ],
+    "names": [],
+    "file": "Details.module.css"
+}

@@ -1,0 +1,184 @@
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #F4F5F6;
+}
+
+@media only screen and (max-width: 767px) {
+  .row {
+    display: block;
+  }
+}
+
+:global(.dark-mode) .row {
+  background: #141416;
+}
+
+.col:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 4px;
+}
+
+@media only screen and (max-width: 767px) {
+  .col:first-child {
+    padding-right: 0;
+  }
+}
+
+.col:first-child .price {
+  color: #777E90;
+}
+
+.col:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 285px;
+  padding: 24px;
+  background: #FCFCFD;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 767px) {
+  .col:nth-child(2) {
+    width: 100%;
+    margin-top: 4px;
+  }
+}
+
+:global(.dark-mode) .col:nth-child(2) {
+  background: #17181B;
+}
+
+.col:nth-child(2) .price {
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 1.33333;
+  font-weight: 600;
+  letter-spacing: -.01em;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -2px;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 4px);
+          flex: 0 0 calc(50% - 4px);
+  width: calc(50% - 4px);
+  margin: 2px;
+  padding: 20px 32px;
+  border-radius: 4px;
+  background: #FCFCFD;
+}
+
+@media only screen and (max-width: 1339px) {
+  .item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% - 4px);
+            flex: 0 0 calc(100% - 4px);
+    width: calc(100% - 4px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .item {
+    padding: 20px 24px;
+  }
+}
+
+:global(.dark-mode) .item {
+  background: #17181B;
+}
+
+.item:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% - 4px);
+          flex: 0 0 calc(100% - 4px);
+  width: calc(100% - 4px);
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  font-weight: 500;
+  color: #353945;
+}
+
+:global(.dark-mode) .title {
+  color: #F4F5F6;
+}
+
+.bg {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.details {
+  text-align: right;
+}
+
+.currency {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4px;
+}
+
+.info .category {
+  border-radius: 13px;
+}
+
+.money {
+  margin-right: 12px;
+  font-size: 12px;
+  line-height: 1.66667;
+  font-weight: 600;
+  color: #777E90;
+}
+
+.chart {
+  width: 100%;
+  height: 52px;
+  margin-top: auto;
+}
+/*# sourceMappingURL=AccountBalances.module.css.map */

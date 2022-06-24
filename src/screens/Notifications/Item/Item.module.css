@@ -1,0 +1,124 @@
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 767px) {
+  .item {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.item:not(:last-child) {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E6E8EC;
+}
+
+:global(.dark-mode) .item:not(:last-child) {
+  border-color: #353945;
+}
+
+.item.active .status {
+  display: block;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+  border-radius: 50%;
+  border: 2px solid #E6E8EC;
+}
+
+:global(.dark-mode) .icon {
+  border-color: #353945;
+}
+
+.icon svg {
+  fill: #777E90;
+}
+
+.line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .line {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.title {
+  margin-right: auto;
+  padding-right: 32px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+  .title {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin: 0 0 8px;
+    padding-right: 0;
+  }
+}
+
+.date {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-top: 2px;
+  font-size: 12px;
+  line-height: 1.66667;
+  color: #777E90;
+}
+
+@media only screen and (max-width: 767px) {
+  .date {
+    margin: 0 auto 0 0;
+  }
+}
+
+.status {
+  display: none;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  margin: 5px 0 0 16px;
+  border-radius: 50%;
+  background: #58BD7D;
+}
+
+@media only screen and (max-width: 767px) {
+  .status {
+    margin-top: 3px;
+  }
+}
+
+.content {
+  font-size: 12px;
+  line-height: 1.66667;
+  color: #777E90;
+}
+/*# sourceMappingURL=Item.module.css.map */

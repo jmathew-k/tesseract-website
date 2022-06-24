@@ -1,0 +1,101 @@
+.head {
+  max-width: 455px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1179px) {
+  .head {
+    margin-bottom: 48px;
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.info {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #353945;
+}
+
+:global(.dark-mode) .info {
+  color: #B1B5C3;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -48px -16px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .list {
+    display: block;
+    margin: 0;
+  }
+}
+
+.card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(33.333% - 32px);
+          flex: 0 0 calc(33.333% - 32px);
+  width: calc(33.333% - 32px);
+  margin: 48px 16px 0;
+}
+
+@media only screen and (max-width: 1023px) {
+  .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 32px);
+            flex: 0 0 calc(50% - 32px);
+    width: calc(50% - 32px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card {
+    width: 100%;
+    margin: 32px 0 0;
+  }
+}
+
+.card:nth-child(n+4) {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .card:nth-child(n+4) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card:nth-child(n+4) {
+    display: none;
+  }
+}
+
+.btns {
+  margin-top: 64px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .btns {
+    margin-top: 48px;
+  }
+}
+
+.button .loader {
+  margin: 0 16px 0 5px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+/*# sourceMappingURL=Lessons.module.css.map */

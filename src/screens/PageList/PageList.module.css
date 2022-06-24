@@ -1,0 +1,10 @@
+.page {
+  padding: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+  .page {
+    padding: 64px 0;
+  }
+}
+/*# sourceMappingURL=PageList.module.css.map */

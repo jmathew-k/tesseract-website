@@ -1,0 +1,41 @@
+.head {
+  padding: 20px 32px 8px;
+  font-size: 12px;
+  line-height: 1.66667;
+  font-weight: 500;
+  color: #777E90;
+}
+
+@media only screen and (max-width: 767px) {
+  .head {
+    padding: 20px 0 8px;
+  }
+}
+
+.body {
+  background: #FCFCFD;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+:global(.dark-mode) .body {
+  background: #17181B;
+}
+
+.button {
+  height: 32px;
+}
+
+@media only screen and (max-width: 767px) {
+  .button {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 0;
+  }
+}
+
+.button:not(:last-child) {
+  margin-right: 8px;
+}
+/*# sourceMappingURL=FiatAndSpot.module.css.map */

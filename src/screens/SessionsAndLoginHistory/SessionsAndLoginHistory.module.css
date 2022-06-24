@@ -1,0 +1,96 @@
+.section:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.title {
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 1.33333;
+  font-weight: 600;
+  letter-spacing: -.01em;
+}
+
+@media only screen and (max-width: 767px) {
+  .title {
+    margin-bottom: 16px;
+  }
+}
+
+.table {
+  display: table;
+  width: 100%;
+}
+
+.row {
+  display: table-row;
+}
+
+.row:first-child .col {
+  border-bottom: 1px solid #F4F5F6;
+  font-size: 12px;
+  line-height: 1.66667;
+  font-weight: 600;
+  color: #353945;
+}
+
+:global(.dark-mode) .row:first-child .col {
+  border-color: #23262F;
+  color: #B1B5C3;
+}
+
+.row:not(:first-child):not(:last-child) .col {
+  border-bottom: 1px solid #E6E8EC;
+}
+
+:global(.dark-mode) .row:not(:first-child):not(:last-child) .col {
+  border-color: #353945;
+}
+
+.col {
+  display: table-cell;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.col:nth-child(2) {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.col:last-child {
+  text-align: right;
+}
+
+.content {
+  font-weight: 500;
+}
+
+.note {
+  color: #777E90;
+}
+
+.location,
+.status {
+  min-width: 64px;
+  text-align: center;
+}
+
+:global(.dark-mode) .location {
+  background: #FCFCFD;
+  color: #23262F;
+}
+
+.btns {
+  margin-top: 36px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+  .btns {
+    margin-top: 16px;
+  }
+  .btns .button {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=SessionsAndLoginHistory.module.css.map */

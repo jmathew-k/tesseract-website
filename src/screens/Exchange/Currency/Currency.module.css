@@ -1,0 +1,182 @@
+.currency {
+  padding: 16px;
+  border-radius: 4px;
+  background: #FCFCFD;
+}
+
+:global(.dark-mode) .currency {
+  background: #17181B;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px 12px;
+  border-radius: 14px;
+  background: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-weight: 700;
+  color: #777E90;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.link:hover {
+  color: #353945;
+}
+
+:global(.dark-mode) .link:hover {
+  color: #E6E8EC;
+}
+
+.link.active {
+  background: #E6E8EC;
+  color: #23262F;
+}
+
+:global(.dark-mode) .link.active {
+  background: #353945;
+  color: #FCFCFD;
+}
+
+.link:not(:last-child) {
+  margin-right: 8px;
+}
+
+.form {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 0 40px 0 14px;
+  border-radius: 8px;
+  background: none;
+  border: 2px solid #E6E8EC;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  line-height: 1.66667;
+  color: #23262F;
+  -webkit-transition: border-color .2s;
+  transition: border-color .2s;
+}
+
+:global(.dark-mode) .input {
+  border-color: #353945;
+  color: #FCFCFD;
+}
+
+.input::-webkit-input-placeholder {
+  color: #777E90;
+}
+
+.input:-ms-input-placeholder {
+  color: #777E90;
+}
+
+.input::-ms-input-placeholder {
+  color: #777E90;
+}
+
+.input::placeholder {
+  color: #777E90;
+}
+
+.input:focus {
+  border-color: #777E90;
+}
+
+.result {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+}
+
+.result svg {
+  fill: #777E90;
+  -webkit-transition: fill .2s;
+  transition: fill .2s;
+}
+
+.result:hover svg {
+  fill: #3772FF;
+}
+
+.table {
+  display: table;
+  width: 100%;
+}
+
+.row {
+  display: table-row;
+}
+
+.row:first-child .col {
+  padding-bottom: 12px;
+  font-size: 12px;
+  line-height: 1.66667;
+  font-weight: 600;
+  color: #777E90;
+}
+
+.row:not(:first-child) .col {
+  font-size: 12px;
+  line-height: 1.66667;
+  font-weight: 500;
+}
+
+.col {
+  display: table-cell;
+  padding: 4px;
+}
+
+.col:first-child {
+  padding-left: 0;
+}
+
+.col:last-child {
+  padding-right: 0;
+  text-align: right;
+}
+
+.line {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.favorite {
+  position: relative;
+  top: -2px;
+  margin-right: 4px;
+}
+
+.info span {
+  color: #777E90;
+}
+
+.positive {
+  color: #58BD7D;
+}
+
+.negative {
+  color: #FF6838;
+}
+/*# sourceMappingURL=Currency.module.css.map */
