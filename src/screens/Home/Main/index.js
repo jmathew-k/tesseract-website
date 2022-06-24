@@ -29,8 +29,8 @@ const Hero = ({ scrollToRef }) => {
 				</div>
 				<div className={styles.bg}>
 					<img
-						srcSet='/images/content/controller2.png'
-						src='/images/content/controller2.png'
+						srcSet='/images/content/console.png 2x'
+						src='/images/content/console.png'
 						alt='Cards'
 					/>
 				</div>
