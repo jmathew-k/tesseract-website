@@ -9,17 +9,17 @@ const Article = () => {
 		<div className={cn('section', styles.main)}>
 			<div className={cn('container', styles.container)}>
 				<div className={styles.content}>
-					<h3>Future of Digital Ownership</h3>
-					<p>
+					<h3>Next Frontier in Digital Ecosystems</h3>
+					{/* <p>
 						We believe we are at the forefront of a new technological wave, and
 						blockchain gaming will be even bigger than all the shifts we’ve seen
 						before. Forte’s mission is to prepare all game developers, big and
 						small — whether you already have a AAA title with millions of
 						players or you are building a blockchain game from the ground up —
 						to be successful in this new landscape.
-					</p>
+					</p> */}
 					<p>
-						Forte’s platform allows game publishers to easily integrate
+						The Tesseract platform allows game publishers to easily integrate
 						blockchain technologies into their games, enabling features such as
 						seamless, embeddable token wallets, non-fungible token (NFT) minting
 						and selling, payment rails, and other services built specifically

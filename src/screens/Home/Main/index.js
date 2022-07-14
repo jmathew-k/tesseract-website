@@ -11,7 +11,7 @@ const Hero = ({ scrollToRef }) => {
 			<div className={cn('container', styles.container)}>
 				<div className={styles.wrap}>
 					<h2 className={cn('h2', styles.title)}>
-						Decentralised Commerce Layer for<br></br>Digital Experiences
+						Decentralised Infrastructure for<br></br>Digital Experiences
 					</h2>
 					<div className={styles.text}>
 						Bring True Ownership Of Digital Assets, Verifiable Scarcity, And
