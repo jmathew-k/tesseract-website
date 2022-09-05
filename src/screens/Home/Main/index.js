@@ -14,8 +14,8 @@ const Hero = ({ scrollToRef }) => {
 						Decentralised Infrastructure for<br></br>Digital Experiences
 					</h2>
 					<div className={styles.text}>
-						Bring True Ownership Of Digital Assets, Verifiable Scarcity, And
-						Open Standard For Interoperability To Your Game Economy
+						Bring True Ownership Of Virtual Assets, Verifiable Scarcity, And
+						Open Standard For Interoperability To Your Digital Experience
 					</div>
 					<Link className={cn('button', styles.button)} to='/learn-crypto'>
 						Early Access

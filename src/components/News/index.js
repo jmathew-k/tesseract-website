@@ -72,7 +72,7 @@ const News = ({ classSection }) => {
             />
           </div> */}
 					<h2 className={cn('h2', styles.title)}>
-						Launch your NFT or game token economy
+						Tesseract Web3 Stack
 					</h2>
 					{/* <div className={styles.info}>
             A creative agency that lead and inspire

@@ -37,10 +37,10 @@ const Download = () => {
 				</div>
 				<div className={styles.wrap}>
 					<h2 className={cn('h2', styles.title)}>
-						Integrate with your Platform
+						Integrate with your Game
 					</h2>
 					<div className={styles.info}>
-						Integrate blockchain based community dynamics directly into your
+						Integrate blockchain based ownership for virtual assets directly into your
 						game experience
 					</div>
 					<div className={styles.list}>
